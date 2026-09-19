@@ -1,0 +1,171 @@
+/* Inline create card (left column of the live-classes page) */
+.clcm-card {
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #eef1f7;
+  padding: 22px;
+}
+
+.clcm-card-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 18px;
+}
+
+.clcm-plus {
+  color: #2563eb;
+  font-weight: 800;
+}
+
+.clcm-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.clcm-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.clcm-field label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.clcm-field input,
+.clcm-field select,
+.clcm-field textarea {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #111827;
+  font-family: inherit;
+  outline: none;
+}
+
+.clcm-field input:focus,
+.clcm-field select:focus,
+.clcm-field textarea:focus {
+  border-color: #93c5fd;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.clcm-field textarea {
+  resize: vertical;
+}
+
+.clcm-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.clcm-hint {
+  font-size: 12px;
+  color: #9ca3af;
+}
+.clcm-hint--warn {
+  color: #d97706;
+}
+
+.clcm-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.clcm-btn-primary,
+.clcm-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  border-radius: 10px;
+  padding: 11px 18px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.clcm-btn-primary {
+  background: #1d4ed8;
+  color: #fff;
+  width: 100%;
+  justify-content: center;
+}
+.clcm-btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.clcm-btn-primary:hover:not(:disabled) {
+  background: #1e3fae;
+}
+
+.clcm-btn-secondary {
+  background: #fff;
+  color: #374151;
+  border: 1px solid #e2e8f0;
+}
+.clcm-btn-secondary:hover {
+  background: #f8fafc;
+}
+
+/* Edit overlay modal */
+.clcm-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  padding: 20px;
+}
+
+.clcm-modal {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  width: 480px;
+  max-width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.clcm-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.clcm-modal-header h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #111827;
+}
+
+.clcm-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.clcm-modal .clcm-btn-primary {
+  width: auto;
+}
+
+@media (max-width: 480px) {
+  .clcm-grid {
+    grid-template-columns: 1fr;
+  }
+}

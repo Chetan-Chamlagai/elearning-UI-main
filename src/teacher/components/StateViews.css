@@ -1,0 +1,118 @@
+/* components/StateViews.css */
+
+.state-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 48px 24px;
+  border-radius: 14px;
+}
+
+.state-view__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.state-view__icon--empty {
+  background: rgba(41, 82, 227, 0.08);
+  color: #2952e3;
+}
+
+.state-view__icon--error {
+  background: #fef3f2;
+  color: #d92d20;
+}
+
+.state-view__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 15.5px;
+  font-weight: 600;
+  color: #101828;
+  margin: 0 0 6px;
+}
+
+.state-view__message {
+  font-size: 13.5px;
+  color: #667085;
+  margin: 0;
+  max-width: 320px;
+  line-height: 1.5;
+}
+
+.state-view__action {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 18px;
+  background: #2952e3;
+  color: #ffffff;
+  border: none;
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.state-view__action:hover {
+  background: #1f3fb8;
+}
+
+.state-view__action--retry {
+  background: #ffffff;
+  color: #d92d20;
+  border: 1px solid #fda29b;
+}
+
+.state-view__action--retry:hover {
+  background: #fef3f2;
+}
+
+/* ---------- Loading ---------- */
+.state-view--loading {
+  padding: 32px 24px;
+}
+
+.state-view__spinner {
+  width: 26px;
+  height: 26px;
+  border: 3px solid rgba(41, 82, 227, 0.15);
+  border-top-color: #2952e3;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  animation: state-view-spin 0.8s linear infinite;
+}
+
+@keyframes state-view-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 480px) {
+  .state-view {
+    padding: 36px 16px;
+  }
+
+  .state-view__icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .state-view__title {
+    font-size: 14.5px;
+  }
+
+  .state-view__message {
+    font-size: 13px;
+  }
+}

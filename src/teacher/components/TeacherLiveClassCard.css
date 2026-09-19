@@ -1,0 +1,161 @@
+.lcc-card {
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #eef1f7;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.lcc-card--highlight {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 1px #2563eb;
+}
+
+.lcc-thumb {
+  height: 110px;
+  background: linear-gradient(135deg, #1e3a8a, #4338ca);
+  position: relative;
+}
+
+.lcc-thumb .lcm-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.lcc-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lcc-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.lcc-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.lcc-faculty-badge {
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.lcc-teacher {
+  margin: 0;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.lcc-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+  color: #374151;
+}
+.lcc-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.lcc-meta svg {
+  color: #9ca3af;
+}
+
+.lcc-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.lcc-btn-primary,
+.lcc-btn-secondary {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.lcc-btn-primary {
+  background: #1d4ed8;
+  color: #fff;
+}
+.lcc-btn-primary:hover {
+  background: #1e3fae;
+}
+
+.lcc-btn-secondary {
+  background: #fff;
+  color: #1d4ed8;
+  border: 1px solid #dbe2f0;
+}
+.lcc-btn-secondary:hover {
+  background: #f0f4ff;
+}
+
+.lcc-icon-btn {
+  width: 40px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  color: #6b7280;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lcc-icon-btn:hover {
+  background: #f8fafc;
+}
+.lcc-icon-btn--danger:hover {
+  color: #dc2626;
+  border-color: #fecaca;
+}
+
+/* Shared status badges — used by liveClassHelpers.statusBadgeClass() */
+.lcm-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.lcm-badge--upcoming {
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+.lcm-badge--live {
+  background: #fee2e2;
+  color: #dc2626;
+}
+.lcm-badge--past {
+  background: #f1f5f9;
+  color: #64748b;
+}
